@@ -1,0 +1,95 @@
+[
+	{
+		"line": 1,
+		"elements": [
+			{
+				"start_timestamp": "2024-12-05T11:08:19.435Z",
+				"before": [
+					{
+						"result": {
+							"duration": 3781103600,
+							"status": "passed"
+						},
+						"match": {
+							"location": "StepDefination.Hooks.beforeScenario()"
+						}
+					}
+				],
+				"line": 19,
+				"name": "Verify if delete place functionality is working",
+				"description": "",
+				"id": "validating-place-apis;verify-if-delete-place-functionality-is-working",
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"status": "passed"
+						},
+						"line": 20,
+						"name": "deletePlace Payload",
+						"match": {
+							"location": "StepDefination.PlaceValidationStepDefination.delete_place_payload()"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 1992274900,
+							"status": "passed"
+						},
+						"line": 21,
+						"name": "user calls \"deletePlaceAPI\" with \"POST\" http request",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"deletePlaceAPI\"",
+									"offset": 11
+								},
+								{
+									"val": "\"POST\"",
+									"offset": 33
+								}
+							],
+							"location": "StepDefination.PlaceValidationStepDefination.user_calls_with_http_request(java.lang.String,java.lang.String)"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 9002400,
+							"status": "passed"
+						},
+						"line": 22,
+						"name": "\"status\" in response body is \"OK\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"status\"",
+									"offset": 0
+								},
+								{
+									"val": "\"OK\"",
+									"offset": 29
+								}
+							],
+							"location": "StepDefination.PlaceValidationStepDefination.in_response_body_is(java.lang.String,java.lang.String)"
+						},
+						"keyword": "And "
+					}
+				],
+				"tags": [
+					{
+						"name": "@DeletePlace"
+					}
+				]
+			}
+		],
+		"name": "Validating place APIs",
+		"description": "",
+		"id": "validating-place-apis",
+		"keyword": "Feature",
+		"uri": "file:src/test/java/FeatureFile/placevalidation.feature",
+		"tags": []
+	}
+]
