@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 		features="src/test/java/FeatureFile",
 		glue={"StepDefination"},
 //		plugin={"pretty","json:target/cucumber.json"},
-				plugin={"pretty","html:target/cucumber.html"},
+				plugin={"pretty","json:target/cucumber.json"},
 		tags="@DeletePlace"
 		)
 
